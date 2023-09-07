@@ -1,0 +1,32 @@
+body {
+  background: #151515;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+
+}
+
+.buttons {
+  display: flex;
+  z-index: -1;
+  justify-content: space-between;
+  width: 800px;
+  position: absolute;
+  margin: auto;
+}
+
+@media (width < 800px) {
+  .buttons {
+    position: absolute;
+    top: 10px;
+    width: unset;
+    gap: 20px;
+  }
+}
+
+[hidden] {
+  display: none !important;
+}
